@@ -1,7 +1,4 @@
 {
-  "pages:build": "npx @cloudflare/next-on-pages",
-  "preview": "npm run pages:build && wrangler pages dev",
-  "deploy": "npm run pages:build && wrangler pages deploy",
   "name": "vite-for-cloudflare",
   "version": "0.1.0",
   "private": true,
@@ -9,7 +6,10 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "pages:build": "npx @cloudflare/next-on-pages",
+    "preview": "npm run pages:build && wrangler pages dev",
+    "deploy": "npm run pages:build && wrangler pages deploy"
   },
   "dependencies": {
     "next": "15.1.4",
